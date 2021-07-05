@@ -203,17 +203,17 @@ Let's get this more clear with an example:</br></br>
 
 <b>Example - 2.1</br></br></b>
 
-&emsp;&emsp;def copy_source_data(source1, source2):</br>
+<i>&emsp;&emsp;def copy_source_data(source1, source2):</br>
 &emsp;&emsp;&emsp;if source1:</br>
 &emsp;&emsp;&emsp;&emsp;&emsp;for bits in range(len(source1)):</br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;source2[bits] = source1[bits]</br>
 &emsp;&emsp;&emsp;else:</br>
 &emsp;&emsp;&emsp;&emsp;&emsp;for bits in range(len(source2)):</br>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;source1[bits] = source2[bits]</br></br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;source1[bits] = source2[bits]</br></br></i>
 
 <b>Example - 2.2</br></br></b>
 
-&emsp;&emsp;def copy_source_data(source1, source2):</br>
+<i>&emsp;&emsp;def copy_source_data(source1, source2):</br>
 &emsp;&emsp;&emsp;&emsp;for bits in range(len(source)):</br>
 &emsp;&emsp;&emsp;&emsp;&emsp;source2[bits] = source1[bits]</br>
      
@@ -221,7 +221,7 @@ Let's get this more clear with an example:</br></br>
 &emsp;&emsp;&emsp;&emsp;if source1:</br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;copy_source_data(source1, source2)</br>
 &emsp;&emsp;&emsp;else:</br>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;copy_source_data(source2, source1)</br></br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;copy_source_data(source2, source1)</br></br></i>
 
 Here, in the above example 2.1 and 2.2 we can see how breaking the copy_source_data into another function made this whole code a lot easier to understand and read. Each function is doing just one thing and working what they are assigned for.</br></br>
 <b><i>"Functions should do one thing and that one thing well"</br></br></i></b></br>
@@ -232,7 +232,7 @@ The ratio of a code written to the reading is 1-to-10. we surely need to write a
 
 <b>Example - 3.1</b></</br></br></br>
 
-&emsp;&emsp;# Copy data from one source to another</br>
+<i>&emsp;&emsp;# Copy data from one source to another</br>
 &emsp;&emsp;def copy_source_data(source1, source2):</br>
 &emsp;&emsp;&emsp;&emsp;for bits in range(len(source)):</br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;source2[bits] = source1[bits]</br>
@@ -241,7 +241,7 @@ The ratio of a code written to the reading is 1-to-10. we surely need to write a
 &emsp;&emsp;&emsp;&emsp;if source1:</br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;copy_source_data(source1, source2)</br>
 &emsp;&emsp;&emsp;&emsp;else:</br>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;copy_source_data(source2, source1)</br></br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;copy_source_data(source2, source1)</br></br></i>
 Example 2.2 is quite clear as we can see that we are copying data to function name just says copy source data. The comments clear out the little bit of confusion that could have arrived due to source1 and source2 as both are the source and the comment clear out the tension.</br></br></br>
 
 
@@ -256,7 +256,7 @@ I think an example would be better here for Horizontal formatting:</br></br>
 
 <b>Example - 4.1</b></br></br>
 
-&emsp;&emsp;def copy_one_source_to_another(source1, source2):</br>
+<i>&emsp;&emsp;def copy_one_source_to_another(source1, source2):</br>
 &emsp;&emsp;&emsp;&emsp; for bits in range(len(source)):</br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; source2[bits] = source1[bits]</br>
       
@@ -264,11 +264,11 @@ I think an example would be better here for Horizontal formatting:</br></br>
 &emsp;&emsp;&emsp;&emsp;if source1:</br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; copy_one_source_to_another(source1, source2)</br>
 &emsp;&emsp;&emsp;&emsp; else:</br>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; copy_one_source_to_another(source2, source1)</br></br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; copy_one_source_to_another(source2, source1)</br></br></i>
 
 <b>Example - 4.2</b></br></br>
 
-&emsp;&emsp;def copy_one_source_to_another(source1, source2):</br>
+<i>&emsp;&emsp;def copy_one_source_to_another(source1, source2):</br>
 &emsp;&emsp;&emsp;&emsp;for bits in range(len(source)):</br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; source2[bits] = source1[bits]</br>
       
@@ -276,7 +276,7 @@ I think an example would be better here for Horizontal formatting:</br></br>
 &emsp;&emsp;&emsp;&emsp;  if source1:</br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; copy_one_source_to_another(source1, source2)</br>
 &emsp;&emsp;&emsp;&emsp;else:</br>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;copy_one_source_to_another(source2, source1)</br></br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;copy_one_source_to_another(source2, source1)</br></br></i>
 I know indentation in Python is an important part. Whereas there have been libraries that allow us to use curly braces in python. On the other hand, here I would like to bring your attention more towards the indentation. From Example 4.1 and 4.2 you can analyze the importance of horizontal indentation. The code in 4.1 will fail to throw an indentation error. The code in Example 4.2 is much more cleaner and easy to read than in Example 4.1.</br></br></br>
 
 
@@ -285,12 +285,12 @@ Error handling is an integral part of a code. Things may go wrong, devices fail 
 
 <b>Example - 5.1</b></br></br>
 
-&emsp;&emsp;def divide(n1, n2):</br>
+<i>&emsp;&emsp;def divide(n1, n2):</br>
 &emsp;&emsp;&emsp;&emsp;try:</br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;result = n1/n2</br>
 &emsp;&emsp;&emsp;&emsp;except ZeroDivisionError:</br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;print("Oops! Divided by Zero Error occurred.")</br>
-&emsp;&emsp;&emsp;&emsp;return result</br></br></br>
+&emsp;&emsp;&emsp;&emsp;return result</br></br></br></i>
 
 <b><i>Writing a clean program is not an easy task it needs consistency and effort. Earlier it might slow down your pace but it is best for the long run. The more you do the more you learn. Keep Learning!</i></b>
                       </div>
