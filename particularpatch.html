@@ -149,28 +149,30 @@
                           little patch and the rest of the changes you wanted to add in another commit. It isn't much of
                           a headache if it is just a single file and a little patch to change but the situation goes out
                           of hand when there are a lot of many files involved and you have a large number of commits
-                          lined up. That does seem scarier. isn't it?</br>
+                          lined up. That does seem scarier. isn't it?
 
                           <br> Git consists of some awesome features and Interactive staging is one of them. Git makes
-                          it possible to stage certain patches of files and not the rest of them.</br>
+                          it possible to stage certain patches of files and not the rest of them.
 
                           <br> Here is one of many solutions:</br>
 
 
                         <h4>
-                          <li>git reset HEAD^</li></br>
+                          <li>git reset HEAD^</li>
                         </h4>
-                        &emsp; This will move the files from the topmost commit to the 'untracked files'
-                        state.</br></br>
+                        <p class="mb-30"style="color: black;">
+                         This will move the files from the topmost commit to the 'untracked files'
+                        state.</br>
 
-                        &emsp;Files being in an untracked state consist of all your changes but they are waiting to be
-                        added, but you don't wanna add the whole file. just some of the largest made changes.</br></br>
+                        Files being in an untracked state consist of all your changes but they are waiting to be
+                        added, but you don't wanna add the whole file. just some of the largest made changes.</br>
 
 
                         <h4>
                           <li>git add --patch file_name.py (file_name from the listed 'untracked files')</li>
-                        </h4></br>
-                        &emsp;This command will display all the changes that you have made to that particular file patch
+                        </h4>
+                        <p class="mb-30"style="color: black;">
+                        This command will display all the changes that you have made to that particular file patch
                         by patch. We can play around with each patch of the code. We can split, select, leave, etc from
                         the code with the help of the following options which will be displayed as soon as you add patch
                         the file.</br></br>
@@ -188,10 +190,10 @@
                         &emsp;&emsp; - g : select a patch to go</br>
                         &emsp;&emsp; - / : search for a patch with the given regex</br>
                         &emsp;&emsp; - e : manually edit the present patch</br>
-                        &emsp;&emsp; - ? : print help</br></br>
+                        &emsp;&emsp; - ? : print help</br>
 
-
-                        <li>After selecting the code patch from the file. we can just say 'no' to other patches and
+                          
+                        <p class="mb-30"style="color: black;">After selecting the code patch from the file. we can just say 'no' to other patches and
                           leave the file. We get that file with our selected patches into the "to be committed" state.
                           Commit that file with a new commit message. and you are good to go.</li></br>
                         You can add more files and patches the same way.</br></br>
