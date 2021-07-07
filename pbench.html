@@ -155,13 +155,13 @@
                           line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
                           comes from a line in section 1.10.32.
                         </p>-->
-                        <p class="mb-30"style="color: black;">Hello world,</p>
-                        <p class="mb-30"style="color: black;">
+                        <p class="mb-30"style="color: black;">Hello world,<br>
+                        
                           Pbench is a short of "Performance bench", is a
                           comprehensive framework that assist engineers with
                           their benchmarking and performance analysis.
-                        </p>
-                        <p class="mb-30"style="color: black;">
+                        <br>
+                        
                           The framework in short strives to make the life of
                           performance engineer more efficient and comprehensive.
                           The most products mowadays are distributed systems and
@@ -177,11 +177,12 @@
 
                         <h5>The Framework allows user to:</h5>
                         <p class="mb-30">
+                          <p class="mb-30"style="color: black;"></p>
                           <ul><li> Collect data from one or more than one systems
                           <br />
                           <li> Indexes and verifies it <br />
                          <li> Helps to visually analyse it</ul>
-
+                          </p>
                           
                         </p>
 
@@ -204,14 +205,16 @@
                           With this background, the pbench framework is being
                           developed with the following goals in mind:
                         </h5>
-                        <p class="mb-30">
+                        <p class="mb-30"style="color: black;">
+                        
+                          
                           <ul><li>Provide easy access to benchmarking & performance
-                          tools on Linux systems <br /><li>Standardize the
+                          tools on Linux systems <li>Standardize the
                           collection of telemetry and configuration information
                           <br /><li>Automate benchmark execution and collection of
-                          results <br /><li>Output effective visualization for
+                          results <li>Output effective visualization for
                           analysis (locally, as well as on a remote pbench
-                          server) <br /><li> Allow for ingestion into Elasticsearch
+                          server) <li> Allow for ingestion into Elasticsearch
                           and advanced data analysis through easy-to-use
                           dashboards</ul>
 
@@ -229,7 +232,8 @@
                           alt="reviews2"
                           width="800"
                         />
-                        <br /><br /><b>Pbench-agent : </b>Pbench-agent is a collection agent
+
+                        <br /><br /><b><p class="mb-30"style="color: black;">Pbench-agent : </b>Pbench-agent is a collection agent
                         and benchmark wrapper, or harness, responsible for
                         providing commands for running benchmarks across one or
                         more systems under test, while properly collecting the
@@ -239,39 +243,40 @@
                         of the various pieces of data collected. The
                         pbench-agent must be installed on the set of systems the
                         user would like data collected from during a benchmark
-                        run.<br /><br />
+                        run.<br />
 
                         <b>Pbench-server : </b>Pbench-server runs on a remote system and is
                         responsible for archiving the result tarballs, indexing
                         them into an Elasticsearch instance, and unpacking them
-                        for visualization.<br /><br />
+                        for visualization.<br />
 
                         <b>Dashboard : </b>Dashboard is the front-end to the results data
                         captured through the pbench agent and is integrated with
-                        other visualization tools such as Kibana or Grafana.<br />
+                        other visualization tools such as Kibana or Grafana.</p>
 
-                        <br />
-
+                        
+                        <p class="mb-30"style="color: black;">
                         <h3>
                           What are some of many benchmarks offered by Pbench?
                         </h3>
                         <br />
-
-                        <b>Pbench-user-benchmark : </b> This script helps us to
+                        </p>
+                        
+                        <b><p class="mb-30"style="color: black;">Pbench-user-benchmark : </b> This script helps us to
                         run a custom benchmark. It collects data of the tools
                         that are listed in the group, the group can be the
-                        default group or user created group. <br /><br />
+                        default group or user created group. <br />
                         <b>Pbench-fio : </b>It is a workload generator that can
                         be used for both benchmark and stress/hardware
                         verification. It was created to automate fio tests,
                         including calculations of statistics for throughputs and
-                        latency. <br /><br />
+                        latency. <br />
                         <b>Pbench-uperf  : </b>It helps us in network performance
                         testing. It helps us to know the capacity of your entire
                         network infrastructure to support the desired level of
                         traffic induced by distributed storage, using multiple
                         network connections in parallel.
-
+                    
                         <br /><br />
 
                         <h3>WorkFlow</h3>
@@ -285,6 +290,7 @@
                         />
 
                         <br /><br />
+                        <p class="mb-30"style="color: black;">
                         Agent acts as a collection spot of data. It collects the
                         data and send to server with the help of
                         `pbench-move-results` command. Server acts as a
@@ -296,27 +302,27 @@
                         can compare or visualize our data with the help of
                         tables or graphs easily.
 
-                        <br /><br />
+                        <br />
 
                         <h3>Future work</h3>
-                        <br />
                         
-                        Agent: <br /><ul><li> Conversion to all Python3 Scripts (removing
+                        <p class="mb-30"style="color: black;">
+                        Agent: <ul><li> Conversion to all Python3 Scripts (removing
                         remaining complicated bash scripts)</li>
-                        <li>Having a unified platform for running tools </li></ul>
-
-                        <br />Server:<br /><ul><li> Conversion to all Python3 Scripts
+                        <li>Having a unified platform for running tools </li></ul></p>
+                        <p class="mb-30"style="color: black;">
+                        Server:<ul><li> Conversion to all Python3 Scripts
                         (removing remaining bash and perl scripts)</li>
                         <li>Addition of new features (deletion of unpacked
                         tarballs if time exceeds 30 days)</li> 
-                        <li>Introduction of User notion </li></ul>
+                        <li>Introduction of User notion </li></ul></p>
+                        <p class="mb-30"style="color: black;">
+                        Dashboard:<ul> <li> User model - Conversion to PatternFly</li>
 
-                        <br />Dashboard:<br /><ul> <li> User model - Conversion to PatternFly</li>
-
-                        </ul><br />
+                        </ul></p>
 
                         <!-- <h3>For Your Love and Contribution</h3>-->
-                        GitHub Repo: <a href="https://github.com/distributed-system-analysis/pbench" >Pbench GitHub Repository </a>
+                        <br><br>GitHub Repo: <b><a href="https://github.com/distributed-system-analysis/pbench" >Pbench GitHub Repository </a></b>
                       </div>
                     </div>
                   </div>
